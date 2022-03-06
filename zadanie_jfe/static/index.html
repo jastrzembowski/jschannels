@@ -13,13 +13,13 @@
         </main>
         <div class="wrapper__filter">
             <div class="filter">
-                <input class="filter__input" type="text" placeholder="filter channels...">
+                <input class="filter__input" type="text" onkeyup="filterChannels()" placeholder="filter channels...">
             </div>
         </div>
         <aside class="wrapper__aside">
             <div class="sort"> 
                 <h3 class="sort__header">Sort channels by:</h3>
-                <ul class="sort__options">
+                <ul class="sort__options" onclick="sort()">
                     <li>
                         <input class="choice choice--radio" name="sort" type="radio" id="sort-title">
                         <label class="choice__label" for="sort-title">title</label>
@@ -37,7 +37,8 @@
                         <label class="choice__label" for="sort-views">views</label>
                     </li>
                 </ul>
-                <button class="button">Clear</button>
+                <button class="button" onclick="clearFilter()">Clear</button>
+                <button class="button" onclick="changeOrder()">Change order</button>
             </div>
         </aside>
     </body>

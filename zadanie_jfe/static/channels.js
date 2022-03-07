@@ -1,4 +1,5 @@
 "use strict";
+
 function formatNumber(num) {
   return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
 }
@@ -12,36 +13,16 @@ fetch("./channels.json")
     drawChannels(channels);
     allChannels = channels;
   })
-  .catch(error =>{
-    console.log(error)
+  .catch((error) => {
+    console.log(error);
+    return (document.querySelector(".js-content").innerHTML = `
+    <div class="channels_container">
+      <h1>Sorry!</h1> 
+      <h2>We couldn't find any channels </h2></div>
+  `);
   });
-  
-function addUTM(url) {
-  return (
-    url + "?utm_source=page&utm_medium=card&utm_campaign=spring_recrutation"
-  );
-}
 
-function registerStats() {
-  let stats = null;
-  try {
-    stats = JSON.parse(localStorage.getItem("pageStats"));
-  } catch (error) {
-    localStorage.removeItem("pageStats");
-  }
-  if (!stats) {
-    stats = {
-      entries: 0,
-      prevVisit: null,
-      currentVisit: null,
-    };
-  }
-  stats.entries += 1;
-  stats.prevVisit = stats.currentVisit;
-  stats.currentVisit = new Date().toDateString();
-  localStorage.setItem("pageStats", JSON.stringify(stats));
-}
-registerStats();
+
 function drawChannels(channels) {
   const page = channels
     .map((channel) => {
@@ -49,9 +30,11 @@ function drawChannels(channels) {
        <a href="${addUTM(
          channel.customUrl
        )}" target="_blank"> <div class="channels_container">
-           <img srcset="${channel.thumbnails.medium.url} 240w, ${channel.thumbnails.high.url} 800w, ${channel.thumbnails.default.url}"
-           sizes="(max-width: 600px) 480px,
-           800px"
+           <img srcset="${channel.thumbnails.medium.url} 240w, ${
+        channel.thumbnails.high.url
+      } 800w, ${channel.thumbnails.default.url}"
+           sizes="(max-width: 650px) 88px,
+           240px"
            src="${channel.thumbnails.default.url}"></img>
            <h1 class="channel__title">${channel.title}</h1>
            <div class="channels_data">
@@ -76,10 +59,7 @@ function drawChannels(channels) {
   document.querySelector(".js-content").innerHTML = page;
   visibleChannels = channels;
 }
-function darkMode() {
-  var element = document.querySelector(".wrapper");
-  element.classList.toggle("dark-moode");
-}
+
 function filterChannels() {
   let input = "";
   input = document.querySelector(".filter__input").value.toLowerCase();

@@ -122,10 +122,13 @@ button:-moz-focusring {
   align-items: center;
   flex-direction: column;
   margin-top: 8px;
+  
 }
 
 .channels_container h1 {
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .channels_container h3 {
   margin: 0px;
@@ -146,7 +149,8 @@ button:-moz-focusring {
 .channels_container img {
   width: auto;
   border-radius: 50%;
-  border: 8px solid #eceff1;
+  border: 2px solid #eceff1;
+  margin-top: 15px;
 }
 .choice {
   cursor: pointer;
@@ -295,6 +299,7 @@ button:-moz-focusring {
 .header__js-logo {
   padding-left: 25px;
   padding-right: 5px;
+  margin-left: 5px;
   padding-top: 20px;
   background-color: #fbd84a;
 }
@@ -332,6 +337,7 @@ h3 {
 
 .wrapper__header {
   order: 0;
+  margin-top: 5px;
 }
 
 .wrapper__filter {
@@ -409,6 +415,9 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 8px;
     grid-row-gap: 0px;
+  }
+  .channels_container img {
+    border: 8px solid #eceff1;
   }
 }
 @media  (min-width: 1626px) {

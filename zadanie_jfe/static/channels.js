@@ -14,12 +14,7 @@ fetch("./channels.json")
     allChannels = channels;
   })
   .catch((error) => {
-    console.log(error);
-    return (document.querySelector(".js-content").innerHTML = `
-    <div class="channels_container">
-      <h1>Sorry!</h1> 
-      <h2>We couldn't find any channels </h2></div>
-  `);
+    alert("Sorry!\nWe couldn't load any channel.\nTry refreshing your page");
   });
 
 

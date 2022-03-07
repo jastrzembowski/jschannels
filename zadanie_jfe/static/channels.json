@@ -1,6 +1,7 @@
 [
   {
     "title": "Fun Fun Function",
+    "label": "Fun Fun Function",
     "description": "I’m Mattias Petter Johansson, mpj for short. I’ve been a full-time programmer for about ten years. Among others, I've worked for Absolut Vodka, Blackberry and Spotify.  https://patreon.com/funfunfunction",
     "customUrl": "https://youtube.com/funfunfunction",
     "publishedAt": "2015-05-15T08:25:01.000Z",
@@ -36,6 +37,7 @@
   },
   {
     "title": "Google Chrome Developers",
+    "label": "Google Chrome Developers",
     "description": "Making the web more awesome.",
     "customUrl": "https://youtube.com/ChromeDevelopers",
     "publishedAt": "2012-04-24T00:05:52.000Z",
@@ -70,6 +72,7 @@
   },
   {
     "title": "DevTips",
+    "label": "DevTips",
     "description": "DevTips is a weekly show for YOU who want to be inspired 👍 and learn 🖖 about programming. Hosted by David and MPJ - two notorious bug generators 💖 and teachers 🤗. Exploring code together and learning programming along the way - yay!\n\nEverything you see and hear are the opinions and preferences of the individual who said them, and no one else's.",
     "customUrl": "https://youtube.com/DevTipsForDesigners",
     "publishedAt": "2013-08-06T15:31:46.000Z",
@@ -105,6 +108,7 @@
   },
   {
     "title": "freeCodeCamp.org",
+    "label": "freeCodeCamp.org",
     "description": "We're an open source community of busy people who learn to code and build projects for nonprofits.",
     "customUrl": "https://youtube.com/freecodecamp",
     "publishedAt": "2014-12-16T21:18:48.000Z",
@@ -140,6 +144,7 @@
   },
   {
     "title": "meet.js",
+    "label": "meet.js",
     "description": "meet.js videos",
     "customUrl": "https://youtube.com/meetjs",
     "publishedAt": "2013-10-26T08:46:30.000Z",
@@ -174,6 +179,7 @@
   },
   {
     "title": "JSConf",
+    "label": "JSConf",
     "description": "The JSConf YouTube Channel.\nJSConf is a series of JavaScript conferences from around the world and here we release the conference talk videos for free as fast as we can after every event.\n\nTopics include JavaScript, HTML5, CSS, node.js, robotics, etc.",
     "customUrl": "https://youtube.com/jsconfeu",
     "publishedAt": "2012-10-09T10:21:46.000Z",
@@ -208,6 +214,7 @@
   },
   {
     "title": "Coding Tech",
+    "label": "Coding Tech",
     "description": "LEGAL DISCLAIMER ON CONTENT PERMISSIONS:\n\nCoding Tech partners with the tech conferences around the world that provided Coding Tech with their EXPLICIT permissions to republish videos on this channel. Here's the list of Conferences that provided Coding Tech with EXPLICIT written publication permissions: PyData, MLConf, Build Stuff, Code::dive, PolyConf, AmsterdamJS, React Amsterdam, ReactiveConf, Jazoon Tech Days, SFNode, CppCon, Infinite Red, GDG Lviv, Mibuso.com, You Gotta Love Frontend, React Native EU, Node Summit, NodeConfEU, ConFoo, Pixels Camp, JavaScriptLA, The Linux Foundation, Oredev Conference, Techlahoma, fitcevents. Coding Tech also re-posts content which was originally published with the Creative Commons Attribution license (reuse allowed).\n\nFor business inquiries, please connect on LinkedIn: https://www.linkedin.com/in/yuriy-matso-4614951/",
     "customUrl": "https://youtube.com/codingtech",
     "publishedAt": "2015-10-17T02:48:18.000Z",
@@ -243,6 +250,7 @@
   },
   {
     "title": "Mashable",
+    "label": "Mashable",
     "description": "Mashable is for superfans. We're not for the casually curious. Obsess with us. Subscribe: http://on.mash.to/Subscribe",
     "customUrl": "https://www.youtube.com/mashable",
     "publishedAt": "1154225846000",

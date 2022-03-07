@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <title>JavaScript Youtube Channels</title>
         <link rel="stylesheet" type="text/css" href="vendor.css">
-    
+        <script src="https://kraaden.github.io/autocomplete/autocomplete.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://kraaden.github.io/autocomplete/autocomplete.css">
     </head>
     <body class="wrapper">
         <header class="wrapper__header">
@@ -15,7 +16,7 @@
         </main>
         <div class="wrapper__filter">
             <div class="filter">
-                <input class="filter__input" type="text" onkeyup="filterChannels()" placeholder="filter channels...">
+                <input class="filter__input" id="filter__input" type="text" onkeyup="filterChannels()" placeholder="filter channels...">
             </div>
         </div>
         <aside class="wrapper__aside">
@@ -44,8 +45,9 @@
             </div>
         </aside>
     </body>
-    <script src="channels.js"></script>
     <script src="utils.js"></script>
+    <script src="src/picomplete.js"></script>
+    <script src="channels.js"></script>
 
 
 </html>

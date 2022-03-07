@@ -124,3 +124,17 @@ function clearFilter() {
   order = 1;
   filterChannels();
 }
+
+
+var input = document.getElementById("filter__input");
+autocomplete({
+  input: input,
+  fetch: function(text, update) {
+      text = text.toLowerCase();
+      var suggestions = allChannels.filter(channel => channel.title.toLowerCase().includes(text))
+      update(suggestions);
+  },
+  onSelect: function(channel) {
+      input.value = channel.title;
+  }      
+});
